@@ -1,9 +1,9 @@
 # BEMClasses [![Build Status][ci-img]][ci]
 
-This module creating BEM-classes like: 'button__icon button__icon_size_s' 
+This module create BEM-classes like: 'button__icon button__icon_size_s' 
 
-[ci-img]:  https://travis-ci.org/Silvestr-b/BEMClasses.svg
-[ci]:      https://travis-ci.org/Silvestr-b/BEMClasses
+[ci-img]:  https://travis-ci.org/Silvestr-b/bemclasses.svg
+[ci]:      https://travis-ci.org/Silvestr-b/bemclasses
 
 From:
 ```js
