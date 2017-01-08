@@ -28,11 +28,11 @@ module.exports = function BEMClasses(node, isMix){
 			mix = BEMClasses(node.mix, true);
 			classes += mix? ' ' + mix : '';
 		} 
-		
+
 	}
 
 	return classes; 
-};	
+}
 
 function validateMod(mod){ return typeof mod === 'string' || typeof mod === 'boolean' }
 
