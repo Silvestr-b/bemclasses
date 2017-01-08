@@ -1,0 +1,26 @@
+{
+  "name": "BEMClasses",
+  "version": "0.1.0",
+  "description": "This module get object like: { block: 'button', elem: 'icon', mods: { size: 's' } } and return string like: 'button__icon button__icon_size_s'",
+  "keywords": [
+    "css",
+    "bem",
+    "bem-classes",
+    "css"
+  ],
+  "author": "Silvestr Baibuz <silvestr-b@yandex.ru>",
+  "license": "MIT",
+  "repository": "Silvestr-b/bemclasses",
+  "bugs": {
+    "url": "https://github.com/Silvestr-b/bemclasses/issues"
+  },
+  "homepage": "https://github.com/Silvestr-b/bemclasses",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
