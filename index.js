@@ -10,9 +10,11 @@ module.exports = function BEMClasses(node, isMix){
 
 	if(node.mods){
 		for(let modName in node.mods){
-			if(node.mods[modName] && !validateMod(node.mods[modName])) return ''
-			
-			classes += ' ' + entity + '_' + modName  + ((node.mods[modName] === true)? '' : ('_' + node.mods[modName]));
+			if(node.mods[modName]){
+		        if(!validateMod(node.mods[modName])) return ''
+		      
+		        classes += ' ' + entity + '_' + modName  + ((node.mods[modName] === true)? '' : ('_' + node.mods[modName]));
+		    }
 		} 
 	}
 
