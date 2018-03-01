@@ -4,12 +4,12 @@
 module.exports = function BEMClasses(node, isMix){
 	if(!validateNode(node)){ return '' }
 
-	const entity = node.block + (node.elem? ('__' + node.elem) : '');
-	let classes = entity;
-	let modValue = '';
+	var entity = node.block + (node.elem? ('__' + node.elem) : '');
+	var classes = entity;
+	var modValue = '';
 
 	if(node.mods){
-		for(let modName in node.mods){
+		for(var modName in node.mods){
 			if(node.mods[modName]){
 		        if(!validateMod(node.mods[modName])) return ''
 		      
@@ -19,10 +19,10 @@ module.exports = function BEMClasses(node, isMix){
 	}
 
 	if(node.mix && !isMix){
-		let mix;
+		var mix;
 
 		if(Array.isArray(node.mix)){
-			for (let i = 0; i < node.mix.length; i++) {
+			for (var i = 0; i < node.mix.length; i++) {
 				mix = BEMClasses(node.mix[i], true);
 				classes += mix? ' ' + mix : '';
 			}
